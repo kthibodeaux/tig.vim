@@ -20,4 +20,4 @@ nnoremap <leader>b :silent TigBlame<CR>
 nnoremap <leader>y :silent TigLatestCommitForLine<CR>
 ```
 
-[tig](https://github.com/jonas/tig)
+[tig]: https://github.com/jonas/tig
