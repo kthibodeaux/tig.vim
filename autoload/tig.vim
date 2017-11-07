@@ -17,7 +17,7 @@ function tig#blame()
   let l:tig_command = g:tig_command . " blame +" . l:line . " " . l:file
   let l:tmux_command = "!" . g:tig_tmux_command . " " . l:tig_command
 
-  execute l:tmux_command
+  silent execute l:tmux_command
 endfunction
 
 function tig#file_history()
@@ -25,7 +25,7 @@ function tig#file_history()
   let l:tig_command = g:tig_command . " --follow " . l:file
   let l:tmux_command = "!" . g:tig_tmux_command . " " . l:tig_command
 
-  execute l:tmux_command
+  silent execute l:tmux_command
 endfunction
 
 function tig#latest_commit_for_line()
@@ -35,5 +35,5 @@ function tig#latest_commit_for_line()
   let l:tig_command = g:tig_command . " show " . l:sha
   let l:tmux_command = "!" . g:tig_tmux_command . " " . l:tig_command
 
-  execute l:tmux_command
+  silent execute l:tmux_command
 endfunction
