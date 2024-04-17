@@ -14,7 +14,7 @@ endif
 function tig#blame()
   let l:line = line(".")
   let l:file = expand("%")
-  let l:tig_command = g:tig_command . " blame +" . l:line . " " . l:file
+  let l:tig_command = g:tig_command . " blame -CCC +" . l:line . " " . l:file
   let l:tmux_command = "!" . g:tig_tmux_command . " " . l:tig_command
 
   silent execute l:tmux_command
